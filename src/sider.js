@@ -202,7 +202,7 @@ class SiderMenu extends React.Component {
                             <div
                               style={{
                                 textAlign: "left",
-                                display: this.state.sDesign
+                                display: this.state.showSource1
                               }}
                             >
                               <Highlight
