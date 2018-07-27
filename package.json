@@ -1,0 +1,33 @@
+{
+  "name": "templates",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.7.0",
+    "aphrodite": "^2.2.2",
+    "highlight.js": "^9.12.0",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^16.4.1",
+    "react-grid-gallery": "^0.5.1",
+    "react-highlight": "^0.12.0",
+    "react-images": "^0.5.19",
+    "react-masonry-component": "^6.2.1",
+    "react-masonry-layout": "^0.3.0",
+    "react-modal": "^3.5.1",
+    "react-scripts": "^1.1.4",
+    "react-select": "^1.2.1",
+    "react-slick": "^0.23.1",
+    "save": "^2.3.2",
+    "slick-carousel": "^1.8.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
