@@ -1,7 +1,7 @@
 /* Spaces */
 
 $step: 0;
-@while $step <= 100 {
+@while $step <= 50 {
   .mt-#{$step} {
     margin-top: #{$step}px;
   }

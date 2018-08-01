@@ -6,29 +6,13 @@ $base-font: 'Open Sans', sans-serif;
 
 // Colors
 
-$primary-color: #1088c1;
-$white: #ffffff;
-$dark-blue: #1c2632;
-$medium-blue: #11719f;
-$black: #292d31;
-$dark-black: #1d1f20;
-$dark-black-30: rgba($dark-black, 0.3);
-$dark-black-70: rgba($dark-black, 0.7);
-$dark-black-7:  rgba($dark-black, 0.07);
-$black-50: rgba($black, 0.5);
-$dark-blue-50: rgba($dark-blue, 0.5);
-$dark-blue-30: rgba($dark-blue, 0.3);
-$dark-blue-70: rgba($dark-blue, 0.7);
-$light-grey: #bbbbbc;
-$dark-grey: #cbcbcb;
-$dark-grey-50: rgba($dark-grey, 0.5);
-$white-10: rgba($white, 0.1);
-$white-30: rgba($white, 0.3);
-$white-50: rgba($white, 0.5);
-$error-color: #e03232;
-$border-color: #c2c2c2;
-$table-border-color: $dark-black-7;
-$background-color: #ececec;
+$color-primary: #1088c1;
+$color-error: #e03232;
+
+$main-colors: (
+		primary: $color-primary, secondary: $color-error
+) !default;
+
 
 // Font sizes
 $font-size-base: 16px !default;
@@ -54,7 +38,7 @@ $fw-extra-bold: 800;
 
 $radius-lg: 5px !default;
 $radius-sm: 3px !default;
-$radius-xs: 1px !default;
+$radius-xxs: 1px !default;
 
 // Shadows
 
