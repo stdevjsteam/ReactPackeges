@@ -7,7 +7,7 @@ import 'react-select/dist/react-select.css';`;
 const GetSelectStarted = () => {
   return (
     <div>
-      <h1>Installation</h1>
+      <h1>React Select</h1>
       <h3>
         The easiest way to use react-select is to install it from npm and build
         it into your app with Webpack.

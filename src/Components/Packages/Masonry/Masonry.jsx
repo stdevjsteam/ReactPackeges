@@ -59,9 +59,9 @@ const images = [
 
 class Gallery extends Component {
   render() {
-    const childElements = images.map(function(element) {
+    const childElements = images.map((element, index) => {
       return (
-        <div className="image-element-class">
+        <div className="image-element-class" key={index}>
           <img src={element.src} style={{ width: "150px" }} />
         </div>
       );

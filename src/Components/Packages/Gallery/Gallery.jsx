@@ -92,15 +92,7 @@ GalleryExample.defaultProps = {
       thumbnailHeight: 320,
       caption: "Wood Glass (Tom Eversley - isorepublic.com)"
     },
-    {
-      src: "https://c1.staticflickr.com/9/8785/28687743710_870813dfde_h.jpg",
-      thumbnail:
-        "https://c1.staticflickr.com/9/8785/28687743710_3580fcb5f0_n.jpg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 113,
-      isSelected: true,
-      caption: "Red Zone - Paris (Tom Eversley - isorepublic.com)"
-    },
+
     {
       src: "https://c5.staticflickr.com/9/8768/28941110956_b05ab588c1_b.jpg",
       thumbnail:
@@ -132,6 +124,15 @@ GalleryExample.defaultProps = {
       thumbnailWidth: 320,
       thumbnailHeight: 179,
       caption: "Untitled (Jan Vasek - jeshoots.com)"
+    },
+    {
+      src: "https://c1.staticflickr.com/9/8785/28687743710_870813dfde_b.jpg",
+      thumbnail:
+        "https://c1.staticflickr.com/9/8785/28687743710_3580fcb5f0_n.jpg",
+      thumbnailWidth: 320,
+      thumbnailHeight: 113,
+      isSelected: true,
+      caption: "Red Zone - Paris (Tom Eversley - isorepublic.com)"
     }
   ]
 };

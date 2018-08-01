@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
-import SiderMenu from "./sider";
+import Content from "./Content";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <SiderMenu />
+        <Content />
       </div>
     );
   }

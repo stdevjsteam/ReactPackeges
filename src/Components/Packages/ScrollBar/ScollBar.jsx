@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Scrollbars } from "react-custom-scrollbars";
 
-class ColoredScrollbars extends Component {
+export default class ScrollExample extends Component {
   render() {
     return (
-      <Scrollbars style={{ height: "400px" }}>
+      <Scrollbars style={{ height: "400px", width: "500px" }}>
         <div>
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -110,5 +110,3 @@ class ColoredScrollbars extends Component {
     );
   }
 }
-
-export default ColoredScrollbars;

@@ -8,7 +8,7 @@ const impotrtCSS = `import "~slick-carousel/slick/slick.css"; import
 const GetStarted = () => {
   return (
     <div>
-      <h1>Quick start</h1>
+      <h1>React Slick</h1>
       <h3>Create an index.html file and include react-slick with:</h3>
       <Highlight language="javascript" className="highlight">
         {link}
