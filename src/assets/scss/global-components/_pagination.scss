@@ -1,0 +1,29 @@
+/* Pagination */
+
+.pagination {
+  @include flexbox();
+  @include justify-content(center);
+
+  li {
+    color: $dark-black-30;
+    text-align: center;
+    min-width: 36px;
+    height: 36px;
+    line-height: 36px;
+  }
+
+  a {
+    color: $dark-black-70;
+    border-radius: $radius-xs;
+    display: block;
+
+    &.active {
+      background-color: $primary-color;
+      color: $white;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

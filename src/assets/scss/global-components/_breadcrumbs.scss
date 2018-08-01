@@ -1,0 +1,35 @@
+/* Breadcrumbs */
+
+.breadcrumbs {
+	padding-bottom: 25px;
+
+	li {
+		display: inline-block;
+		font-size: $fs-14;
+
+		&:after {
+			content: unicode($icon-arrow-right);
+			font-family: Cyber;
+			font-size: 9px;
+			font-weight: $fw-bold;
+			padding: 0 10px;
+			color: $dark-blue-50;
+		}
+
+		&:last-child {
+
+			&:after {
+				content: '';
+			}
+		}
+
+		a {
+			color: $dark-blue;
+			text-decoration: underline;
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+}

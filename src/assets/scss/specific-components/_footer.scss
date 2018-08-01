@@ -1,0 +1,16 @@
+/* Footer */
+
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: $white-30;
+	font-size: $fs-14;
+
+	&.dark-grey {
+		background-color: $dark-grey;
+		color: $dark-blue;
+	}
+}
