@@ -1,0 +1,109 @@
+/* Dropdown */
+
+.dropdown {
+
+	.dropdown-item {
+		height: 45px;
+		line-height: 45px;
+		padding-left: 20px;
+		padding-right: 15px;
+		@include transition(0.3s);
+		border-radius: $radius-xs;
+		color: $dark-blue;
+		@include flexbox();
+		@include align-items(center);
+		position: relative;
+
+		&:hover {
+			background-color: $dark-grey;
+		}
+
+		i {
+			font-size: $fs-24;
+			padding-left: 40px;
+		}
+	}
+
+	.content, .sub-content {
+		display: none;
+		position: absolute;
+		background-color: $white;
+		box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.45);
+		border-radius: $radius-xs;
+		width: 100%;
+		max-width: 220px;
+		@include transition(0.2s);
+		z-index: 1;
+	}
+
+	.content {
+
+		li, a, .fixed-option {
+			@include flexbox();
+			@include align-items(center);
+			color: $dark-blue-70;
+		}
+
+		li, .fixed-option {
+			padding: 15px;
+
+			i {
+				font-size: $fs-24;
+			}
+
+			.icon-sort-right {
+				padding-left: 100px;
+			}
+
+			.icon-reorder {
+				padding-right: 25px;
+				color: $dark-blue;
+			}
+		}
+
+		.sub-content {
+			display: none;
+			top: 0;
+			right: -220px;
+		}
+
+		.scrollable-options {
+			overflow: auto;
+			max-height: 400px;
+		}
+
+		.icon-settings {
+			font-size: 20px;
+			color: $dark-blue;
+			padding-right: 20px;
+		}
+
+		li {
+
+			&:hover {
+
+				 .sub-content {
+					display: block;
+				}
+			}
+		}
+	}
+
+	> li {
+
+		&:hover {
+			.content {
+				display: block;
+			}
+		}
+	}
+
+	a {
+		@include transition(0.2s);
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}
+

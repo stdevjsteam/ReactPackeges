@@ -1,0 +1,132 @@
+/* Text fields */
+
+.text-field {
+	margin-bottom: 30px;
+	position: relative;
+	width: 100%;
+
+	input, textarea {
+		width: 100%;
+		font-weight: $fw-semi-bold;
+		font-size: $fs-18;
+		height: 45px;
+		line-height: 45px;
+		border-radius: $radius-sm;
+		padding-left: 20px;
+		font-family: $base-font;
+		border-width: 1px;
+		border-style: solid;
+		text-transform: capitalize;
+
+		&:focus {
+			padding-left: 19px;
+			border-width: 2px;
+			font-family: $base-font;
+		}
+
+		&.white {
+			color: $dark-black;
+			border-color: $light-grey;
+
+			&:focus, &:valid {
+				border-color: $dark-black;
+			}
+		}
+
+		&.blue {
+			background-color: $dark-blue;
+			border-color: $white-30;
+			color: $white-30;
+
+			@include placeholder() {
+				color: $white-30;
+			}
+		}
+
+		&.grey {
+			background-color: $white;
+			border-color: $border-color;
+			color: $dark-black;
+			font-size: $fs-16;
+		}
+
+		&.transparent {
+			background-color: transparent;
+			border-color: transparent;
+
+			~ i {
+				color: $dark-blue-50;
+				left: 0;
+			}
+
+			&:focus, &:valid {
+				border-bottom-color: $dark-black;
+				border-width: 1px;
+				font-size: 16px;
+
+				~ i {
+					color: $dark-blue;
+				}
+			}
+
+			~ .search {
+
+				input, textarea {
+					padding-left: 25px;
+				}
+			}
+		}
+
+		@include placeholder() {
+			color: $black-50;
+			font-size: $fs-16;
+		}
+	}
+
+	.error-message {
+		text-align: left;
+		font-style: italic;
+		font-size: 13px;
+		color: $error-color;
+		display: none;
+	}
+
+	&.error {
+
+		input, textarea {
+			border-color: $error-color;
+		}
+
+		.error-message {
+			display: block;
+			position: absolute;
+		}
+	}
+
+	&.search {
+
+		input, textarea {
+			padding-left: 55px;
+
+			&:focus {
+				padding-left: 54px;
+			}
+		}
+
+		i {
+			position: absolute;
+			@include YAlign();
+			font-size: 20px;
+			left: 25px;
+			color: $white-30;
+		}
+	}
+
+	&.size-490 {
+		width: 490px;
+	}
+
+	&.size-500 {
+		max-width: 500px;
+	}
+}

@@ -1,0 +1,19 @@
+/* Titles */
+
+.pageTitle {
+	text-transform: uppercase;
+	color: $dark-black-30;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.section-title {
+	background-color: $background-color;
+	padding: 20px 45px;
+
+	.title {
+		font-weight: $fw-extra-bold;
+		color: $black-50;
+		text-transform: uppercase;
+	}
+}

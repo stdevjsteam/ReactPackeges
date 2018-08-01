@@ -1,0 +1,40 @@
+/* Select 2 */
+
+.select2-search--dropdown {
+	//display: none;
+}
+
+.text-field {
+
+	.select2-container {
+		width: 100%!important;
+	}
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	position: absolute;
+	line-height: 43px;
+	padding-left: 20px;
+}
+
+.select2-container .select2-selection--single {
+	height: 45px;
+	outline: none;
+	border-radius: 0;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+	border-color: $dark-black transparent transparent transparent;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+	border-color: transparent transparent $dark-black transparent;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 43px;
+	right: 15px;
+}
+
+.select2-results__option {
+	padding: 15px;
+}

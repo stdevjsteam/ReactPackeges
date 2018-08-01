@@ -1,0 +1,50 @@
+/* Main table */
+
+table {
+	width: 100%;
+}
+
+.main-table {
+
+	th {
+		background-color: $background-color;
+		color:  $dark-blue;
+		font-weight: $fw-bold;
+		position: relative;
+
+		i {
+			font-size: $fs-24;
+			position: absolute;
+			@include YAlign();
+			padding-left: 10px;
+			color: $dark-blue-50;
+
+			&.active {
+				color: $dark-blue;
+			}
+		}
+	}
+
+	th, td {
+		padding: 15px 50px 15px 40px;
+		border: 1px solid $table-border-color;
+		@include text-overflow();
+	}
+
+	td {
+		font-size: $fs-14;
+	}
+
+	tr {
+		@include transition(0.2s);
+		cursor: pointer;
+
+		&:hover {
+			background-color: $background-color;  ;
+		}
+	}
+
+	table {
+		overflow: auto;
+	}
+}

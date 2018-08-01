@@ -1,0 +1,55 @@
+/* Settings */
+
+.settings {
+
+	.search {
+
+		.text-field {
+
+			input, textarea {
+				border-radius: 0;
+			}
+		}
+	}
+
+	.filters {
+		@include flexbox();
+		@include flex-direction(column);
+		padding: 25px 45px 35px 45px;
+
+		.left-content {
+			width: 100%;
+			max-width: 500px;
+		}
+
+		.right-content {
+			width: 100%;
+			max-width: 810px;
+			padding-left: 35px;
+		}
+
+		.inputs {
+			@include flexbox();
+		}
+
+		.check-elements {
+			@include flexbox();
+			@include align-items(center);
+
+			.right-content {
+				@include flexbox();
+				@include justify-content(space-between);
+				@include align-items(center);
+
+				.icon-refresh {
+					font-size: 19px;
+					color: $primary-color;
+
+					&:hover {
+						opacity: 0.8;
+					}
+				}
+			}
+		}
+	}
+}
