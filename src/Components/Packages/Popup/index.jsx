@@ -51,7 +51,7 @@ class Popup extends React.Component {
       <Layout>
         <div className="Layout">
           <Layout>
-            <Layout style={{ padding: "0 24px 24px" }}>
+            <Layout>
               <Content
                 style={{
                   background: "#fff",
@@ -68,7 +68,7 @@ class Popup extends React.Component {
                   <Col span={2} />
 
                   <Col span={11}>
-                    <h2>Demo</h2>
+                    <h1>Demo</h1>
                     <div style={{ display: "block" }}>
                       <Demo />
                     </div>

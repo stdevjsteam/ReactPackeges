@@ -9,7 +9,7 @@ const GetStarted = () => {
   return (
     <div>
       <h1>React Slick</h1>
-      <h3>Create an index.html file and include react-slick with:</h3>
+      <p className="desc-text">Create an index.html file and include react-slick with:</p>
       <Highlight language="javascript" className="highlight">
         {link}
       </Highlight>
@@ -20,10 +20,10 @@ const GetStarted = () => {
       <Highlight language="javascript" className="highlight">
         yarn add react-slick
       </Highlight>
-      <h3>
+      <p className="desc-text">
         After you are done installing through yarn or npm, now you will have to
         include CSS in your project
-      </h3>
+      </p>
       <h1>Include CSS</h1>
       <Highlight language="javascript" className="highlight">
         npm install slick-carousel --save

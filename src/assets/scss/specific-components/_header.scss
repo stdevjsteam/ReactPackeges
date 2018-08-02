@@ -1,6 +1,6 @@
 header {
 	background-color: $color-secondary;
-	height: 190px;
+	height: 170px;
 	@include flexbox();
 	@include align-items(center);
 

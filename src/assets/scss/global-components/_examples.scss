@@ -1,0 +1,17 @@
+/* Example codes section styles */
+
+.hljs {
+	padding: 1.75rem;
+	text-align: left;
+	background: $color-secondary;
+	color: $color-grey;
+	margin-bottom: 25px;
+}
+
+.hljs-keyword, .hljs-selector-tag {
+	color: $color-primary;
+}
+
+.hljs-string, .hljs-symbol, .hljs-bullet {
+	color: $color-tertiary;
+}

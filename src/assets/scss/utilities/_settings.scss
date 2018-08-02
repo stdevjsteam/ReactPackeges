@@ -8,13 +8,15 @@ $base-font: 'Open Sans', sans-serif;
 
 $color-primary: #f7df1e;
 $color-secondary: #1A2930;
-$color-secondary-70: rgba($color-secondary, 0.8);
+$color-secondary-70: rgba($color-secondary, 0.7);
 $color-tertiary: #bec2c9;
+$color-grey: #e4e4e4;
 $color-body: #fbfaf9;
 $color-error: #e03232;
+$color-disable: #878b92;
 
 $main-colors: (
-		primary: $color-primary, secondary: $color-error
+		primary: $color-primary, secondary: $color-secondary, tertiary: $color-tertiary, grey: $color-grey
 ) !default;
 
 

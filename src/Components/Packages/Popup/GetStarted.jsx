@@ -6,21 +6,21 @@ const GetStartedPopup = () => {
   return (
     <div>
       <h1>React-Modal</h1>
-      <h3>Accessible modal dialog component for React.JS</h3>
-      <h3>
+      <p className="desc-text">Accessible modal dialog component for React.JS</p>
+      <p className="desc-text">
         We maintain that accessibility is a key component of any modern web
         application. As such, we have created this modal in such a way that it
         fulfills the accessibility requirements of the modern web. We seek to
         keep the focus on accessibility while providing a functional, capable
         modal component for general use.
-      </h3>
+      </p>
       <Highlight language="javascript" className="highlight">
         {`$ npm install react-modal 
 $ yarn add react-modal`}
       </Highlight>
 
       <div>
-        <p>
+        <p className="desc-text">
           For more details please click
           <a href="http://reactcommunity.org/react-modal/" target="_blank">
             {" "}

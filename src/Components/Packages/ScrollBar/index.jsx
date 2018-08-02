@@ -67,7 +67,7 @@ class ScrollBar extends React.Component {
                   <Col span={2} />
 
                   <Col span={11}>
-                    <h2>Demo</h2>
+                    <h1>Demo</h1>
                     <div style={{ display: "block" }}>
                       <Demo />
                     </div>

@@ -1,0 +1,17 @@
+/* Ant layout content styles */
+
+.ant-layout {
+
+	h1 {
+		text-transform: uppercase;
+		padding-bottom: 25px;
+		color: $color-secondary;
+	}
+
+	.desc-text {
+		text-align: left;
+		padding-bottom: 25px;
+		color: $color-secondary-70;
+		line-height: 1.8;
+	}
+}
