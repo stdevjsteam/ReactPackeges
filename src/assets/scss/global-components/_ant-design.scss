@@ -1,0 +1,59 @@
+/* Ant design styles */
+
+.ant-menu, .ant-layout-sider, .ant-layout-sider-children {
+	background: $color-secondary-70!important;
+}
+
+.ant-layout-sider {
+	height: 100%!important;
+	width: 270px!important;
+	max-width: none!important;
+}
+
+.ant-menu {
+	text-align: left;
+}
+
+.ant-menu-item > a, .ant-menu-submenu-title {
+	color: white;
+	font-size: $md!important;
+	text-transform: uppercase;
+	font-weight: $fw-bold;
+}
+
+.ant-menu-item, .ant-menu-submenu-title {
+
+	&:hover {
+		background-color: white;
+		color: $color-secondary;
+
+		a {
+			color: $color-secondary;
+		}
+	}
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+	background-color: white;
+
+	a {
+		color: $color-secondary;
+	}
+}
+
+.ant-menu-vertical .ant-menu-item:after, .ant-menu-vertical-left .ant-menu-item:after, .ant-menu-vertical-right .ant-menu-item:after, .ant-menu-inline .ant-menu-item:after {
+	border-color: $color-primary;
+}
+
+.ant-menu-vertical > .ant-menu-item, .ant-menu-vertical-left > .ant-menu-item, .ant-menu-vertical-right > .ant-menu-item, .ant-menu-inline > .ant-menu-item, .ant-menu-vertical > .ant-menu-submenu > .ant-menu-submenu-title, .ant-menu-vertical-left > .ant-menu-submenu > .ant-menu-submenu-title, .ant-menu-vertical-right > .ant-menu-submenu > .ant-menu-submenu-title, .ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title {
+	line-height: 65px;
+	height: 65px;
+}
+
+.ant-menu-vertical .ant-menu-item:not(:last-child), .ant-menu-vertical-left .ant-menu-item:not(:last-child), .ant-menu-vertical-right .ant-menu-item:not(:last-child), .ant-menu-inline .ant-menu-item:not(:last-child) {
+	margin: 0;
+}
+
+.ant-layout {
+	padding: 0!important;
+}

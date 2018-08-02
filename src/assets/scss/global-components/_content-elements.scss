@@ -1,0 +1,29 @@
+/* Content elements */
+
+// Body
+
+body {
+	font-family: $base-font;
+	font-weight: $fw-semi-bold;
+	min-height: 100vh;
+	background-color: $color-body;
+	font-size: $md;
+	position: relative;
+	padding-bottom: 120px;
+}
+
+.container-md {
+	width: 100%;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 15px;
+}
+
+.container-lg {
+	width: 100%;
+	max-width: 1800px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 15px;
+}
