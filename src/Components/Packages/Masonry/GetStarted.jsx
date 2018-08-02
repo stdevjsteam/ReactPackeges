@@ -6,15 +6,15 @@ const GetStartedMasonry = () => {
   return (
     <div>
       <h1>React Masonry Component</h1>
-      <h3>
+      <p className="desc-text">
         The component is bundled with Masonry, so no additional dependencies
         needed! You can optionally include Masonry as a script tag if there
-        should be any reason for doing so
-      </h3>
+        should be any reason for doing so.
+      </p>
       <Highlight language="javascript" className="highlight">
         {`<script src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.5/masonry.pkgd.min.js" />`}
       </Highlight>
-      <h3>To use the component just require the module. </h3>
+      <p className="desc-text">To use the component just require the module. </p>
       <h1>Installation</h1>
       <Highlight language="javascript" className="highlight">
         npm install --save react-masonry-component

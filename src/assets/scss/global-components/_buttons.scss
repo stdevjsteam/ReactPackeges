@@ -1,0 +1,95 @@
+/* Buttons */
+
+.btn {
+	font-size: $md;
+	height: 45px;
+	cursor: pointer;
+	font-weight: $fw-semi-bold;
+	text-align: center;
+	display: inline-block;
+	text-transform: uppercase;
+	white-space: nowrap;
+	@include transition(all 0.3s);
+
+	// Filled buttons
+
+	&.filled {
+		border: 0;
+		color: #fff;
+		line-height: 43px;
+		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+
+		@each $key,$val in $main-colors {
+			&.#{$key} {
+				background-color: #{$val};
+
+				&:hover {
+					background-color: darken($val, 8%);
+				}
+			}
+		}
+	}
+
+	// Outline buttons
+
+	&.outline {
+		line-height: 37px;
+		background-color: #fff;
+		border: 2px solid transparent;
+		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+
+		@each $key,$val in $main-colors {
+			&.#{$key} {
+				border-color: #{$val};
+
+				&:hover {
+					border-color: darken($val, 8%);
+				}
+			}
+		}
+	}
+
+	// Link buttons
+
+	&.link {
+		border: 0;
+		line-height: 41px;
+		background-color: transparent;
+		text-decoration: underline;
+
+		@each $key,$val in $main-colors {
+			&.#{$key} {
+				color: #{$val};
+
+				&:hover {
+					color: darken($val, 8%);
+				}
+			}
+		}
+	}
+
+	&:hover {
+		text-decoration: none;
+		opacity: 0.7;
+	}
+
+	&[disabled], &.disabled {
+		border: 0;
+		pointer-events: none;
+		line-height: 41px;
+		color: rgba(#fff, 0.6);
+		background-color: $color-disable;
+	}
+
+	// Buttons size modifications
+
+	&.min-120 {
+		min-width: 120px;
+	}
+	&.min-160 {
+		min-width: 160px;
+	}
+	&.min-220 {
+		min-width: 220px;
+	}
+}

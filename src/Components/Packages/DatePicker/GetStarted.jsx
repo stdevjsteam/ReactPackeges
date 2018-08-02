@@ -9,19 +9,19 @@ const GetStartedDatePicker = () => {
   return (
     <div>
       <h1>React Dates</h1>
-      <h3>
+      <p className="desc-text">
         Ensure packages are installed with correct version numbers by running:
-      </h3>
+      </p>
       <Highlight language="javascript" className="highlight">
         {link}
       </Highlight>
-      <h3>Which produces and runs a command like:</h3>
+      <p className="desc-text">Which produces and runs a command like:</p>
       <Highlight language="javascript" className="highlight">
         {`npm install --save react-dates moment@>=#.## react@>=#.##
         react-dom@>=#.##`}
       </Highlight>
       <div>
-        <p>
+        <p className="desc-text">
           For more details please click
           <a href="https://github.com/airbnb/react-dates" target="_blank">
             {" "}

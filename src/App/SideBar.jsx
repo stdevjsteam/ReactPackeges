@@ -42,13 +42,6 @@ class JSSider extends Component {
     return (
       <div>
         <Sider width={200} style={{ background: "#fff" }}>
-          <Switch
-            className="Switch"
-            checked={this.state.theme === "dark"}
-            onChange={this.changeTheme}
-            checkedChildren="Dark"
-            unCheckedChildren="Light"
-          />
           <Menu
             defaultOpenKeys={this.props.selectDesign === true ? ["sub1"] : []}
             mode="inline"

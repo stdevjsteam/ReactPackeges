@@ -72,12 +72,12 @@ class Carusel extends React.Component {
                   <Col span={2} />
 
                   <Col span={11}>
-                    <h2>Demo</h2>
+                    <h1>Demo</h1>
                     <div style={{ display: "block" }}>
                       <Demo />
                     </div>
                     <div style={{ marginTop: "30px" }}>
-                      <Button onClick={this.showSource}>
+                      <Button onClick={this.showSource} className="btn filled secondary min-160">
                         {" "}
                         {this.state.showSource === "none"
                           ? "Show Source"
