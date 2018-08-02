@@ -32,14 +32,14 @@ const GetStarted = () => {
         {impotrtCSS}
       </Highlight>
       <div>
-        <p>
+        <div className="align-left">
           <a
-            href="https://react-slick.neostack.com/docs/get-started"
+            href="https://react-slick.neostack.com/docs/get-started" className="btn link secondary"
             target="_blank"
           >
             More Details
           </a>
-        </p>
+        </div>
       </div>
     </div>
   );
