@@ -20,13 +20,9 @@ $ yarn add react-modal`}
       </Highlight>
 
       <div>
-        <p className="desc-text">
-          For more details please click
-          <a href="http://reactcommunity.org/react-modal/" target="_blank">
-            {" "}
-            Here
-          </a>
-        </p>
+        <div>
+            <p>For more details please click <a href="http://reactcommunity.org/react-modal/" target="_blank" className="btn link secondary"> Here</a></p>
+        </div>
       </div>
     </div>
   );

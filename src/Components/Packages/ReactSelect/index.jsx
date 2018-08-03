@@ -74,8 +74,8 @@ class Select extends React.Component {
                     <div style={{ display: "block" }}>
                       <Demo />
                     </div>
-                    <div style={{ marginTop: "30px" }}>
-                      <Button onClick={() => this.showSource("showSource1")}>
+                    <div className="pt-25 pb-25">
+                      <Button onClick={() => this.showSource("showSource1")} className="btn filled secondary min-160">
                         {" "}
                         {this.state.showSource === "none"
                           ? "Show Source"
@@ -98,8 +98,8 @@ class Select extends React.Component {
                       <div style={{ display: "block" }}>
                         <Demo1 />
                       </div>
-                      <div style={{ marginTop: "30px" }}>
-                        <Button onClick={() => this.showSource("showSource1")}>
+                      <div className="pt-25">
+                        <Button onClick={() => this.showSource("showSource1")} className="btn filled secondary min-160">
                           {" "}
                           {this.state.showSource1 === "none"
                             ? "Show Source"

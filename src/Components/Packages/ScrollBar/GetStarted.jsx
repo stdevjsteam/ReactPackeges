@@ -22,17 +22,8 @@ const GetScrollStarted = () => {
             <Highlight language="javascript" className="highlight">
                 npm install react-custom-scrollbars --save
             </Highlight>
-            <div>
-                <p className="desc-text">
-                    For more details please click
-                    <a
-                        href="https://github.com/malte-wessel/react-custom-scrollbars/"
-                        target="_blank"
-                    >
-                        {" "}
-                        Here
-                    </a>
-                </p>
+            <div className="pt-25">
+                <p className="desc-text"> For more details please click <a href="https://github.com/malte-wessel/react-custom-scrollbars/" target="_blank" className="btn link secondary"> Here</a></p>
             </div>
         </div>
     );

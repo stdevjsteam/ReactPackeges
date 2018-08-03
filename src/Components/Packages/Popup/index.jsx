@@ -66,14 +66,13 @@ class Popup extends React.Component {
                     <GetStarted />
                   </Col>
                   <Col span={2} />
-
                   <Col span={11}>
                     <h1>Demo</h1>
-                    <div style={{ display: "block" }}>
+                    <div>
                       <Demo />
                     </div>
-                    <div style={{ marginTop: "30px" }}>
-                      <Button onClick={this.showSource}>
+                    <div className="pt-25">
+                      <Button onClick={this.showSource} className="btn filled secondary min-160">
                         {" "}
                         {this.state.showSource === "none"
                           ? "Show Source"
