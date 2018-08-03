@@ -1,7 +1,7 @@
 import React from "react";
 import { Layout, Button, Menu } from "antd";
 import { Link, withRouter } from "react-router-dom";
-import logo1 from "./assets/images/javascript-js.svg";
+import logo1 from "./assets/images/logo.png";
 
 const { Header } = Layout;
 

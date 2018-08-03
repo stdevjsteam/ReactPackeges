@@ -15,3 +15,11 @@
 .hljs-string, .hljs-symbol, .hljs-bullet {
 	color: $color-tertiary;
 }
+
+.hljs-variable {
+	color: $color-green;
+}
+
+.hljs-attribute {
+	color: $color-blue;
+}

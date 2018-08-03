@@ -14,13 +14,15 @@ $color-grey: #e4e4e4;
 $color-body: #fbfaf9;
 $color-error: #e03232;
 $color-disable: #878b92;
+$color-green: #7ab2a5;
+$color-blue: #6b9acb;
 
 $main-colors: (
 		primary: $color-primary, secondary: $color-secondary, tertiary: $color-tertiary, grey: $color-grey
 ) !default;
 
-
 // Font sizes
+
 $font-size-base: 16px !default;
 $xs: 12px;  $sm: 14px;  $md: 16px;  $lg: 18px;  $xl: 24px;
 

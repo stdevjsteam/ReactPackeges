@@ -1,0 +1,50 @@
+.checkbox {
+	cursor: pointer;
+
+	.check-icon {
+		top: 3px;
+		width: 17px;
+		height: 17px;
+		position: relative;
+		display: inline-block;
+		background-color: transparent;
+		border: 1px solid $color-secondary;
+		opacity: 0.5;
+		@include transition(0.2s);
+
+		&::before {
+			content: unicode($icon-check);
+			font-family: Packages;
+			font-size: 11px;
+			font-weight: $fw-bold;
+			color: $color-secondary;
+			position: absolute;
+			display: block;
+			top: 2px;
+			left: 2px;
+			opacity: 0;
+			@include transition(0.2s);
+		}
+	}
+
+	.checkbox-label {
+		padding-left: 10px;
+		color: $color-secondary;
+		font-size: $md;
+		@include transition(0.2s);
+	}
+
+	input {
+		display: none;
+
+		&:checked {
+			& ~ .check-icon {
+				opacity: 1;
+
+				&::before {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
