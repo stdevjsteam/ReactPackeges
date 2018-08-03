@@ -74,11 +74,11 @@ class DatePicker extends React.Component {
 
                   <Col span={11}>
                     <h1>Demo</h1>
-                    <div style={{ display: "block" }}>
+                    <div>
                       <Demo />
                     </div>
-                    <div style={{ marginTop: "30px" }}>
-                      <Button onClick={() => this.showSource("showSource1")}>
+                    <div className="pt-25 pb-25">
+                      <Button onClick={() => this.showSource("showSource1")} className="btn filled secondary min-160">
                         {" "}
                         {this.state.showSource === "none"
                           ? "Show Source"
@@ -97,12 +97,12 @@ class DatePicker extends React.Component {
                     </div>
 
                     <div>
-                      <h2>Demo 1</h2>
+                      <h2 className="pb-25">Demo 1</h2>
                       <div style={{ display: "block" }}>
                         <Demo1 />
                       </div>
-                      <div style={{ marginTop: "30px" }}>
-                        <Button onClick={() => this.showSource("showSource1")}>
+                      <div className="pt-25">
+                        <Button onClick={() => this.showSource("showSource1")} className="btn filled secondary min-160">
                           {" "}
                           {this.state.showSource1 === "none"
                             ? "Show Source"

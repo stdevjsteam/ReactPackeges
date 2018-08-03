@@ -26,7 +26,7 @@ class Popup extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.handleOpenModal}>Trigger Modal</button>
+        <button onClick={this.handleOpenModal} className="btn outline secondary min-160">Trigger Modal</button>
         <ReactModal
           isOpen={this.state.showModal}
           contentLabel="Inline Styles Modal Example"

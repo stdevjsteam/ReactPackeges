@@ -4,7 +4,7 @@ import { Scrollbars } from "react-custom-scrollbars";
 export default class ScrollExample extends Component {
     render() {
         return (
-            <Scrollbars style={{ height: "400px", width: "500px" }}>
+            <Scrollbars style={{height: "400px"}}>
               <div>
                 <p className="desc-text">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam

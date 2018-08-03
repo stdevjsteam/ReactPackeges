@@ -14,17 +14,8 @@ const GetStartedGalery = () => {
       <Highlight language="javascript" className="highlight">
         npm install --save react-grid-gallery
       </Highlight>
-      <div>
-        <p>
-          For more details please click
-          <a
-            href="https://benhowell.github.io/react-grid-gallery/"
-            target="_blank"
-          >
-            {" "}
-            Here
-          </a>
-        </p>
+      <div className="pt-25">
+        <p className="desc-text">For more details please click <a href="https://benhowell.github.io/react-grid-gallery/" target="_blank" className="btn link secondary"> Here </a></p>
       </div>
     </div>
   );
