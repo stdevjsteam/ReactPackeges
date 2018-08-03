@@ -21,7 +21,7 @@ const GetStartedDatePicker = () => {
         react-dom@>=#.##`}
             </Highlight>
             <div>
-                <div className="pt-25">
+                <div>
                     <p className="desc-text">For more details please click <a href="https://github.com/airbnb/react-dates" target="_blank" className="btn link secondary"> Here</a>
                     </p>
                 </div>

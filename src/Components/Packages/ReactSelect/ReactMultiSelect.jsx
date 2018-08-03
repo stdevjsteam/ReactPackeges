@@ -49,7 +49,7 @@ class ReactMultiSelect extends Component {
     const options = crazy ? WHY_WOULD_YOU : FLAVOURS;
     return (
       <div className="section" style={{ textAlign: "left" }}>
-        <h3 className="section-heading">{this.props.label} </h3>
+        <p className="desc-text">{this.props.label} </p>
         <Select
           closeOnSelect={!stayOpen}
           disabled={disabled}
@@ -72,6 +72,7 @@ class ReactMultiSelect extends Component {
               checked={this.state.removeSelected}
               onChange={this.toggleCheckbox}
             />
+            <span className="check-icon" />
             <span className="checkbox-label">Remove selected options</span>
           </label>
           <label className="checkbox" style={{ display: "block" }}>
@@ -82,6 +83,7 @@ class ReactMultiSelect extends Component {
               checked={this.state.disabled}
               onChange={this.toggleCheckbox}
             />
+            <span className="check-icon" />
             <span className="checkbox-label">Disable the control</span>
           </label>
           <label className="checkbox" style={{ display: "block" }}>
@@ -92,6 +94,7 @@ class ReactMultiSelect extends Component {
               checked={crazy}
               onChange={this.toggleCheckbox}
             />
+            <span className="check-icon" />
             <span className="checkbox-label">
               I don't like Chocolate (disabled the option)
             </span>
@@ -104,6 +107,7 @@ class ReactMultiSelect extends Component {
               checked={stayOpen}
               onChange={this.toggleCheckbox}
             />
+            <span className="check-icon" />
             <span className="checkbox-label">
               Stay open when an Option is selected
             </span>
@@ -116,6 +120,7 @@ class ReactMultiSelect extends Component {
               checked={this.state.rtl}
               onChange={this.toggleCheckbox}
             />
+            <span className="check-icon" />
             <span className="checkbox-label">rtl</span>
           </label>
         </div>
