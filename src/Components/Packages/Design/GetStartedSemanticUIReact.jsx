@@ -7,14 +7,7 @@ const { Content } = Layout;
 const GetStartedSemanticUIReact = () => {
   return (
     <Layout>
-      <Content
-        style={{
-          background: "#fff",
-          padding: 24,
-          margin: 0,
-          minHeight: "90vh"
-        }}
-      >
+      <Content>
         <h1>Semantic UI React</h1>
         <div>
           <p className="desc-text">Semantic UI React is the official React integration for <a href="https://semantic-ui.com/" target="_blank" className="btn link secondary"> Semantic UI</a>.

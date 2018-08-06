@@ -50,15 +50,8 @@ class Masonry extends React.Component {
       <Layout>
         <div className="Layout">
           <Layout>
-            <Layout style={{ padding: "0 24px 24px" }}>
-              <Content
-                style={{
-                  background: "#fff",
-                  padding: 24,
-                  margin: 0,
-                  minHeight: "90vh"
-                }}
-              >
+            <Layout>
+              <Content>
                 <Row>
                   <Col span={11}>
                     {" "}
@@ -71,7 +64,7 @@ class Masonry extends React.Component {
                     <div>
                       <Demo />
                     </div>
-                    <div className="pt-25">
+                    <div className="pt-25 pb-25">
                       <Button onClick={this.showSource} className="btn filled secondary min-160">
                         {" "}
                         {this.state.showSource === "none"

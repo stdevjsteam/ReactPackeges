@@ -63,8 +63,8 @@ class ReactMultiSelect extends Component {
           value={value}
         />
 
-        <div className="checkbox-list" style={{ marginTop: "15px" }}>
-          <label className="checkbox" style={{ display: "block" }}>
+        <div className="checkbox-list mt-25">
+          <label className="checkbox">
             <input
               type="checkbox"
               className="checkbox-control"
@@ -75,7 +75,7 @@ class ReactMultiSelect extends Component {
             <span className="check-icon" />
             <span className="checkbox-label">Remove selected options</span>
           </label>
-          <label className="checkbox" style={{ display: "block" }}>
+          <label className="checkbox">
             <input
               type="checkbox"
               className="checkbox-control"
@@ -86,7 +86,7 @@ class ReactMultiSelect extends Component {
             <span className="check-icon" />
             <span className="checkbox-label">Disable the control</span>
           </label>
-          <label className="checkbox" style={{ display: "block" }}>
+          <label className="checkbox">
             <input
               type="checkbox"
               className="checkbox-control"
@@ -99,7 +99,7 @@ class ReactMultiSelect extends Component {
               I don't like Chocolate (disabled the option)
             </span>
           </label>
-          <label className="checkbox" style={{ display: "block" }}>
+          <label className="checkbox">
             <input
               type="checkbox"
               className="checkbox-control"
@@ -112,7 +112,7 @@ class ReactMultiSelect extends Component {
               Stay open when an Option is selected
             </span>
           </label>
-          <label className="checkbox" style={{ display: "block" }}>
+          <label className="checkbox">
             <input
               type="checkbox"
               className="checkbox-control"

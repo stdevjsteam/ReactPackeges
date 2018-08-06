@@ -52,14 +52,7 @@ class Popup extends React.Component {
         <div className="Layout">
           <Layout>
             <Layout>
-              <Content
-                style={{
-                  background: "#fff",
-                  padding: 24,
-                  margin: 0,
-                  minHeight: "90vh"
-                }}
-              >
+              <Content>
                 <Row>
                   <Col span={11}>
                     {" "}
@@ -71,7 +64,7 @@ class Popup extends React.Component {
                     <div>
                       <Demo />
                     </div>
-                    <div className="pt-25">
+                    <div className="pt-25 pb-25">
                       <Button onClick={this.showSource} className="btn filled secondary min-160">
                         {" "}
                         {this.state.showSource === "none"

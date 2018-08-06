@@ -27,9 +27,6 @@ export default class GalleryExample extends Component {
     return (
       <div
         style={{
-          display: "block",
-          minHeight: "1px",
-          width: "100%",
           border: "1px solid #ddd",
           overflow: "auto"
         }}

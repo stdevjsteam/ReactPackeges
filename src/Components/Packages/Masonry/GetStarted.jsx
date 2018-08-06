@@ -1,6 +1,5 @@
 import React from "react";
 import Highlight from "react-highlight";
-import "./getStarted.css";
 
 const GetStartedMasonry = () => {
   return (
@@ -20,15 +19,7 @@ const GetStartedMasonry = () => {
         npm install --save react-masonry-component
       </Highlight>
       <div>
-        <p>
-          For more details please click
-          <a
-            href="https://github.com/eiriklv/react-masonry-component"
-            target="_blank"
-          >
-            {" "}
-            Here
-          </a>
+        <p className="desc-text"> For more details please click <a href="https://github.com/eiriklv/react-masonry-component" target="_blank" className="btn link secondary">Here</a>
         </p>
       </div>
     </div>

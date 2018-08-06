@@ -1,6 +1,5 @@
 const source = `import React from "react";
 import Slider from "react-slick";
-import "./carusel.css";
 
 class SimpleSlider extends React.Component {
   render() {

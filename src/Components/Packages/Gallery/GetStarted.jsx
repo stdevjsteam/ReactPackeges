@@ -1,6 +1,5 @@
 import React from "react";
 import Highlight from "react-highlight";
-import "./getStarted.css";
 
 const GetStartedGalery = () => {
   return (
@@ -14,7 +13,7 @@ const GetStartedGalery = () => {
       <Highlight language="javascript" className="highlight">
         npm install --save react-grid-gallery
       </Highlight>
-      <div className="pt-25">
+      <div>
         <p className="desc-text">For more details please click <a href="https://benhowell.github.io/react-grid-gallery/" target="_blank" className="btn link secondary"> Here </a></p>
       </div>
     </div>

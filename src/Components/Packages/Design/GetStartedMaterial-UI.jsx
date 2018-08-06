@@ -7,14 +7,7 @@ const { Content } = Layout;
 const GetStartedMaterialUI = () => {
   return (
     <Layout>
-      <Content
-        style={{
-          background: "#fff",
-          padding: 24,
-          margin: 0,
-          minHeight: "90vh"
-        }}
-      >
+      <Content>
         <h1>MATERIAL-UI</h1>
         <p className="desc-text">
           Install Material-UI's source files via npm. We take care of injecting

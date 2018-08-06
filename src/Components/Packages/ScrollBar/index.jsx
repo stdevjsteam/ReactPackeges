@@ -71,7 +71,7 @@ class ScrollBar extends React.Component {
                     <div>
                       <Demo />
                     </div>
-                    <div className="pt-25">
+                    <div className="pt-25 pb-25">
                       <Button onClick={this.showSource} className="btn filled secondary min-160">
                         {" "}
                         {this.state.showSource === "none"

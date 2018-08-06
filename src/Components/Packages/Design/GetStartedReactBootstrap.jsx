@@ -7,14 +7,7 @@ const { Content } = Layout;
 const GetStartedReactBootsrtap = () => {
   return (
     <Layout>
-      <Content
-        style={{
-          background: "#fff",
-          padding: 24,
-          margin: 0,
-          minHeight: "90vh"
-        }}
-      >
+      <Content>
         <h1>React-Bootstrap: installation</h1>
 
         <Highlight language="javascript" className="highlight">

@@ -44,109 +44,109 @@ class ReactSelect extends Component {
         var options = STATES[this.state.country];
         return (
             <div>
-              <div className="section" style={{ textAlign: "left" }}>
-                <p className="desc-text">{this.props.label} </p>
-                <Select
-                    id="state-select"
-                    ref={ref => {
-                        this.select = ref;
-                    }}
-                    onBlurResetsInput={false}
-                    onSelectResetsInput={false}
-                    autoFocus
-                    options={options}
-                    simpleValue
-                    clearable={this.state.clearable}
-                    name="selected-state"
-                    disabled={this.state.disabled}
-                    value={this.state.selectValue}
-                    onChange={this.updateValue}
-                    rtl={this.state.rtl}
-                    searchable={this.state.searchable}
-                />
-                <div className="pt-25 pb-25">
-                  <button
-                      type="button"
-                      onClick={this.focusStateSelect} className="btn outline secondary mr-25 min-160"
-                  >
-                    Focus Select
-                  </button>
-                  <button
-                      type="button"
-                      onClick={this.clearValue} className="btn outline tertiary min-160"
-                  >
-                    Clear Value
-                  </button>
+                <div className="section" style={{ textAlign: "left" }}>
+                    <p className="desc-text">{this.props.label} </p>
+                    <Select
+                        id="state-select"
+                        ref={ref => {
+                            this.select = ref;
+                        }}
+                        onBlurResetsInput={false}
+                        onSelectResetsInput={false}
+                        autoFocus
+                        options={options}
+                        simpleValue
+                        clearable={this.state.clearable}
+                        name="selected-state"
+                        disabled={this.state.disabled}
+                        value={this.state.selectValue}
+                        onChange={this.updateValue}
+                        rtl={this.state.rtl}
+                        searchable={this.state.searchable}
+                    />
+                    <div className="pt-25 pb-25">
+                        <button
+                            type="button"
+                            onClick={this.focusStateSelect} className="btn outline secondary mr-25 min-160"
+                        >
+                            Focus Select
+                        </button>
+                        <button
+                            type="button"
+                            onClick={this.clearValue} className="btn outline tertiary min-160"
+                        >
+                            Clear Value
+                        </button>
+                    </div>
+                    <div className="checkbox-list">
+                        <label className="checkbox">
+                            <input
+                                type="checkbox"
+                                className="checkbox-control"
+                                name="searchable"
+                                checked={this.state.searchable}
+                                onChange={this.toggleCheckbox}
+                            />
+                            <span className="check-icon" />
+                            <span className="checkbox-label">Searchable</span>
+                        </label>
+                        <label className="checkbox">
+                            <input
+                                type="checkbox"
+                                className="checkbox-control"
+                                name="disabled"
+                                checked={this.state.disabled}
+                                onChange={this.toggleCheckbox}
+                            />
+                            <span className="check-icon" />
+                            <span className="checkbox-label">Disabled</span>
+                        </label>
+                        <label className="checkbox">
+                            <input
+                                type="checkbox"
+                                className="checkbox-control"
+                                name="clearable"
+                                checked={this.state.clearable}
+                                onChange={this.toggleCheckbox}
+                            />
+                            <span className="check-icon" />
+                            <span className="checkbox-label">Clearable</span>
+                        </label>
+                        <label className="checkbox">
+                            <input
+                                type="checkbox"
+                                className="checkbox-control"
+                                name="rtl"
+                                checked={this.state.rtl}
+                                onChange={this.toggleCheckbox}
+                            />
+                            <span className="check-icon" />
+                            <span className="checkbox-label">rtl</span>
+                        </label>
+                    </div>
+                    <div className="radio-buttons">
+                        <input
+                            type="radio"
+                            className="checkbox-control"
+                            checked={this.state.country === "AU"}
+                            value="AU"
+                            onChange={this.switchCountry}
+                            id="Australia"
+                        />
+                        <label htmlFor="Australia" className="main-label">Australia</label>
+                    </div>
+                    <div className="radio-buttons">
+                        <input
+                            type="radio"
+                            className="checkbox-control"
+                            checked={this.state.country === "US"}
+                            value="US"
+                            onChange={this.switchCountry}
+                            id="US"
+                        />
+                        <label htmlFor="US" className="main-label">USA</label>
+                    </div>
                 </div>
-                <div className="checkbox-list">
-                  <label className="checkbox" style={{ display: "block" }}>
-                    <input
-                        type="checkbox"
-                        className="checkbox-control"
-                        name="searchable"
-                        checked={this.state.searchable}
-                        onChange={this.toggleCheckbox}
-                    />
-                    <span className="check-icon" />
-                    <span className="checkbox-label">Searchable</span>
-                  </label>
-                  <label className="checkbox" style={{ display: "block" }}>
-                    <input
-                        type="checkbox"
-                        className="checkbox-control"
-                        name="disabled"
-                        checked={this.state.disabled}
-                        onChange={this.toggleCheckbox}
-                    />
-                    <span className="check-icon" />
-                    <span className="checkbox-label">Disabled</span>
-                  </label>
-                  <label className="checkbox" style={{ display: "block" }}>
-                    <input
-                        type="checkbox"
-                        className="checkbox-control"
-                        name="clearable"
-                        checked={this.state.clearable}
-                        onChange={this.toggleCheckbox}
-                    />
-                    <span className="check-icon" />
-                    <span className="checkbox-label">Clearable</span>
-                  </label>
-                  <label className="checkbox" style={{ display: "block" }}>
-                    <input
-                        type="checkbox"
-                        className="checkbox-control"
-                        name="rtl"
-                        checked={this.state.rtl}
-                        onChange={this.toggleCheckbox}
-                    />
-                    <span className="check-icon" />
-                    <span className="checkbox-label">rtl</span>
-                  </label>
-                </div>
-                <div className="checkbox-list">
-                  <label className="checkbox" style={{ display: "block" }}>
-                    <input
-                        type="radio"
-                        className="checkbox-control"
-                        checked={this.state.country === "AU"}
-                        value="AU"
-                        onChange={this.switchCountry}
-                    />
-                    <span className="checkbox-label">Australia</span>
-                  </label>
-                  <label className="checkbox" style={{ display: "block" }}>
-                    <input
-                        type="radio"
-                        className="checkbox-control"
-                        checked={this.state.country === "US"}
-                        value="US"
-                        onChange={this.switchCountry}
-                    />
-                    <span className="checkbox-label">United States</span>
-                  </label>
-                </div>
-              </div>
             </div>
         );
     }

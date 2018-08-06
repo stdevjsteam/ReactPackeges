@@ -1,11 +1,8 @@
+/* Header */
+
 header {
 	background-color: $color-secondary;
 	height: 100px;
 	@include flexbox();
 	@include align-items(center);
-
-	.container-lg {
-		padding-top: 15px;
-		padding-bottom: 15px;
-	}
 }

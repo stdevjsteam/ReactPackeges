@@ -57,8 +57,9 @@ class Popup extends Component {
               frameBorder="0"
               src="https://www.youtube.com/embed/A71aqufiNtQ?autoplay=1&cc_load_policy=1&controls=1&disablekb=0&enablejsapi=0&fs=1&iv_load_policy=1&loop=0&rel=0&showinfo=1&start=0&wmode=transparent&theme=dark"
             />
-
-            <button onClick={this.handleCloseModal}>Close Modal</button>
+            <div className="pt-25">
+              <button onClick={this.handleCloseModal} className="btn outline secondary min-160">Close Modal</button>
+            </div>
           </div>
         </ReactModal>
       </div>

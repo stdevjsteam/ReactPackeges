@@ -7,14 +7,7 @@ const { Content } = Layout;
 const GetStartedAntDesign = () => {
   return (
     <Layout>
-      <Content
-        style={{
-          background: "#fff",
-          padding: 24,
-          margin: 0,
-          minHeight: "90vh"
-        }}
-      >
+      <Content>
         <h1>Ant Design</h1>
         <p className="desc-text">
           Ant Design React is dedicated to providing a good development
