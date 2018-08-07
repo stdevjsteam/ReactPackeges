@@ -27,31 +27,21 @@ class Popup extends Component {
     return (
       <div>
         <button onClick={this.handleOpenModal} className="btn outline secondary min-160">Trigger Modal</button>
+        <div>
         <ReactModal
           isOpen={this.state.showModal}
           contentLabel="Inline Styles Modal Example"
           style={{
             overlay: {
-              position: "fixed",
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              backgroundColor: "rgba(1,1,1,0.8)"
             },
             modal: {},
             content: {
-              textAlign: "center",
-              width: "500px",
-              height: "450px",
-              top: 100,
-              left: 600
             }
           }}
         >
-          <div>
+          <div className="popup">
             <iframe
-              width="460"
+              width="400"
               height="330"
               allowFullScreen
               frameBorder="0"
@@ -62,6 +52,7 @@ class Popup extends Component {
             </div>
           </div>
         </ReactModal>
+        </div>
       </div>
     );
   }

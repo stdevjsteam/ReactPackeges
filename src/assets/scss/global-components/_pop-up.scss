@@ -1,0 +1,39 @@
+/* Pop up */
+
+.popup {
+	border: 2px solid $color-secondary-70;
+	background-color: rgb(255, 255, 255);
+	@include flexbox();
+	@include flex-direction(column);
+	@include justify-content(center);
+	@include align-items(center);
+	padding: 75px;
+}
+
+.ReactModal__Content {
+	position: relative!important;
+	max-width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	left: 0!important;
+	right: 0!important;
+	top: 0!important;
+	bottom: 0!important;
+	border: none!important;
+	background: none!important;
+	min-height: 100%;
+	@include flexbox();
+	@include align-items(center);
+	@include justify-content(center);
+}
+
+.ReactModal__Body--open {
+	overflow: hidden!important;
+}
+
+.ReactModal__Overlay {
+	overflow-y: auto;
+	z-index: 1;
+}
+
+// end styling popup
