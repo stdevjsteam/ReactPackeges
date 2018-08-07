@@ -9,7 +9,6 @@ const GetStartedReactBootsrtap = () => {
     <Layout>
       <Content>
         <h1>React-Bootstrap: installation</h1>
-
         <Highlight language="javascript" className="highlight">
           $ npm install --save react-bootstrap
         </Highlight>

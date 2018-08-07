@@ -63,7 +63,6 @@ class Carusel extends React.Component {
                           <GetStarted />
                         </Col>
                         <Col span={2} />
-
                         <Col span={11}>
                           <h1>Demo</h1>
                           <div>

@@ -82,13 +82,11 @@ class DatePicker extends React.Component {
                       style={{
                         textAlign: "left",
                         display: this.state.showSource
-                      }}
-                    >
+                      }}>
                       <Highlight language="javascript" className="highlight">
                         {Source}
                       </Highlight>
                     </div>
-
                     <div>
                       <h2 className="pb-25">Demo 1</h2>
                       <div>
