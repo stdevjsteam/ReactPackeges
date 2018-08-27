@@ -5,13 +5,13 @@ import "./getStarted.css";
 const GetStartedPopup = () => {
   return (
     <div>
-      <h1>React-responsive-modal</h1>
+      <h1>react-dropzone</h1>
 
       <Highlight language="javascript" className="highlight">
-        With npm: {`$ npm install react-responsive-modal --save`}
+        With npm: {`$ npm install --save react-dropzone`}
       </Highlight>
       <Highlight language="javascript" className="highlight">
-        With yarn: {`$ yarn add react-responsive-modal`}
+        With yarn: {`$ yarn add react-dropzone`}
       </Highlight>
 
       <div>
@@ -19,8 +19,8 @@ const GetStartedPopup = () => {
           <p className="desc-text">
             For more details please click{" "}
             <a
-              href="https://github.com/pradel/react-responsive-modal"
-              target="_blank"
+              href="https://react-dropzone.js.org/"
+              target="blank"
               className="btn link secondary"
             >
               {" "}

@@ -1,58 +1,49 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import ReactModal from "react-modal";
+import Modal from "react-responsive-modal";
 
 class Popup extends Component {
-  constructor() {
-    super();
-    this.state = {
-      showModal: false
-    };
+  state = {
+    open: false
+  };
 
-    this.handleOpenModal = this.handleOpenModal.bind(this);
-    this.handleCloseModal = this.handleCloseModal.bind(this);
-  }
+  onOpenModal = () => {
+    this.setState({ open: true });
+  };
 
-  handleOpenModal() {
-    this.setState({ showModal: true });
-  }
+  onCloseModal = () => {
+    this.setState({ open: false });
+  };
 
-  handleCloseModal() {
-    this.setState({ showModal: false });
-  }
-  componentDidMount() {
-    ReactModal.setAppElement("body");
-  }
   render() {
+    const { open } = this.state;
+    const lorem = (
+      <p>
+        Mauris ac arcu sit amet dui interdum bibendum a sed diam. Praesent
+        rhoncus congue ipsum elementum lobortis. Ut ligula purus, ultrices id
+        condimentum quis, tincidunt quis purus. Proin quis enim metus. Nunc
+        feugiat odio at eros porta, ut rhoncus lorem tristique. Nunc et ipsum eu
+        ex vulputate consectetur vel eu nisi. Donec ultricies rutrum lectus, sit
+        ame feugiat est semper vitae. Proin varius imperdiet consequat. Proin eu
+        metus nisi. In hac habitasse platea dictumst. Vestibulum ac ultrices
+        risus. Pellentesque arcu sapien, aliquet sed orci sit amet, pulvinar
+        interdum velit. Nunc a rhoncus ipsum, maximus fermentum dolor. Praesent
+        aliquet justo vitae rutrum volutpat. Ut quis pulvinar est.
+      </p>
+    );
     return (
-      <div>
-        <button onClick={this.handleOpenModal} className="btn outline secondary min-160">Trigger Modal</button>
-        <div>
-        <ReactModal
-          isOpen={this.state.showModal}
-          contentLabel="Inline Styles Modal Example"
-          style={{
-            overlay: {
-            },
-            modal: {},
-            content: {
-            }
-          }}
-        >
-          <div className="popup">
-            <iframe
-              width="400"
-              height="330"
-              allowFullScreen
-              frameBorder="0"
-              src="https://www.youtube.com/embed/A71aqufiNtQ?autoplay=1&cc_load_policy=1&controls=1&disablekb=0&enablejsapi=0&fs=1&iv_load_policy=1&loop=0&rel=0&showinfo=1&start=0&wmode=transparent&theme=dark"
-            />
-            <div className="pt-25">
-              <button onClick={this.handleCloseModal} className="btn outline secondary min-160">Close Modal</button>
-            </div>
-          </div>
-        </ReactModal>
-        </div>
+      <div className="example">
+        <button className="btn btn-action" onClick={this.onOpenModal}>
+          Open
+        </button>{" "}
+        <Modal open={open} onClose={this.onCloseModal}>
+          <h2>Big modal</h2>
+          {lorem}
+          {lorem}
+          {lorem}
+          {lorem}
+          {lorem}
+          {lorem}
+        </Modal>
       </div>
     );
   }

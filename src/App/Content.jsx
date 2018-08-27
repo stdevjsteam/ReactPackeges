@@ -1,7 +1,6 @@
 import React from "react";
-import { Switch, Layout, Menu, Breadcrumb, Icon, Button, Row, Col } from "antd";
+import { Layout } from "antd";
 import { Route, withRouter } from "react-router-dom";
-import Highlight from "react-highlight";
 
 import JSHeader from "./Header";
 import JSSideBar from "./SideBar";
@@ -17,9 +16,8 @@ import AntDesign from "./../Components/Packages/Design/GetStartedAnt-Design";
 import MaterialUI from "./../Components/Packages/Design/GetStartedMaterial-UI";
 import SemanticUi from "./../Components/Packages/Design/GetStartedSemanticUIReact";
 import ReactBootstrap from "./../Components/Packages/Design/GetStartedReactBootstrap";
-
-const { SubMenu } = Menu;
-const { Header, Content, Footer, Sider } = Layout;
+import ReactDropZone from "../Components/Packages/DropZone";
+import PlacesAutocomplete from "../Components/Packages/PlaceAutocomplete";
 
 class SiderMenu extends React.Component {
   state = {
@@ -89,6 +87,12 @@ class SiderMenu extends React.Component {
                 <Route exact path="/scrollbar" component={ScrollBar} />
                 <Route exact path="/datepicker" component={DatePicker} />
                 <Route exact path="/select" component={Select} />
+                <Route exact path="/dropzone" component={ReactDropZone} />
+                <Route
+                  exact
+                  path="/placesAutocomplete"
+                  component={PlacesAutocomplete}
+                />
                 <Route exact path="/antd" component={AntDesign} />
                 <Route exact path="/materialui" component={MaterialUI} />
                 <Route exact path="/semanticui" component={SemanticUi} />

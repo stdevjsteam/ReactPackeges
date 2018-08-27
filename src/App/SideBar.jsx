@@ -135,6 +135,32 @@ class JSSider extends Component {
                 Masonry
               </Link>
             </Menu.Item>
+            <Menu.Item
+              className={`Menu-Item ${
+                defalutSelect === "dropzone" ? "ant-menu-item-selected" : ""
+              }`}
+              key="dropzone"
+              name="reactDropzone"
+              onClick={this.props.selected}
+            >
+              <Link to={`/dropzone`} className="nav-text">
+                DropZone
+              </Link>
+            </Menu.Item>
+            <Menu.Item
+              className={`Menu-Item ${
+                defalutSelect === "placesAutocomplete"
+                  ? "ant-menu-item-selected"
+                  : ""
+              }`}
+              key="placesAutocomplete"
+              name="placesAutocomplete"
+              onClick={this.props.selected}
+            >
+              <Link to={`/placesAutocomplete`} className="nav-text">
+                PlacesAutocomplete
+              </Link>
+            </Menu.Item>
             <Menu.SubMenu key="sub1" title={<span>Design</span>}>
               <Menu.Item
                 key="antd"
