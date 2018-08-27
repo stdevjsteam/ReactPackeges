@@ -56,15 +56,8 @@ class DatePicker extends React.Component {
       <Layout>
         <div className="Layout">
           <Layout>
-            <Layout style={{ padding: "0 24px 24px" }}>
-              <Content
-                style={{
-                  background: "#fff",
-                  padding: 24,
-                  margin: 0,
-                  minHeight: "90vh"
-                }}
-              >
+            <Layout>
+              <Content>
                 <Row>
                   <Col span={11}>
                     {" "}
@@ -73,12 +66,12 @@ class DatePicker extends React.Component {
                   <Col span={2} />
 
                   <Col span={11}>
-                    <h2>Demo</h2>
-                    <div style={{ display: "block" }}>
+                    <h1>Demo</h1>
+                    <div>
                       <Demo />
                     </div>
-                    <div style={{ marginTop: "30px" }}>
-                      <Button onClick={() => this.showSource("showSource1")}>
+                    <div className="pt-25 pb-25">
+                      <Button onClick={() => this.showSource("showSource1")} className="btn filled secondary min-160">
                         {" "}
                         {this.state.showSource === "none"
                           ? "Show Source"
@@ -89,20 +82,18 @@ class DatePicker extends React.Component {
                       style={{
                         textAlign: "left",
                         display: this.state.showSource
-                      }}
-                    >
+                      }}>
                       <Highlight language="javascript" className="highlight">
                         {Source}
                       </Highlight>
                     </div>
-
                     <div>
-                      <h2>Demo 1</h2>
-                      <div style={{ display: "block" }}>
+                      <h2 className="pb-25">Demo 1</h2>
+                      <div>
                         <Demo1 />
                       </div>
-                      <div style={{ marginTop: "30px" }}>
-                        <Button onClick={() => this.showSource("showSource1")}>
+                      <div className="pt-25 pb-25">
+                        <Button onClick={() => this.showSource("showSource1")} className="btn filled secondary min-160">
                           {" "}
                           {this.state.showSource1 === "none"
                             ? "Show Source"

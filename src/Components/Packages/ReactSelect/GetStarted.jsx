@@ -8,26 +8,26 @@ const GetSelectStarted = () => {
   return (
     <div>
       <h1>React Select</h1>
-      <h3>
+      <p className="desc-text">
         The easiest way to use react-select is to install it from npm and build
         it into your app with Webpack.
-      </h3>
+      </p>
       <Highlight language="javascript" className="highlight">
         yarn add react-select
       </Highlight>
-      <h3>
+      <p className="desc-text">
         You can then import react-select and its styles in your application as
         follows:
-      </h3>
+      </p>
       <Highlight language="javascript" className="highlight">
         {link}
       </Highlight>
       <div>
-        <p>
-          <a href="http://jedwatson.github.io/react-select/" target="_blank">
+        <div className="align-left">
+          <a href="http://jedwatson.github.io/react-select/" target="_blank" className="btn link secondary">
             More Details
           </a>
-        </p>
+        </div>
       </div>
     </div>
   );

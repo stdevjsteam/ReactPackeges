@@ -1,0 +1,107 @@
+/* Typography */
+
+// Font family
+
+.base-font {
+	font-family: $base-font;
+}
+
+// Text sizes
+
+@each $key,$val in $text-font-sizes {
+	.font-#{$key} {
+		font-size: #{$val};
+	}
+}
+
+// Heading  text sizes
+
+@each $key,$val in $heading-font-sizes {
+	#{$key}, .#{$key} {
+		font-size: #{$val};
+	}
+}
+
+/* Text Colors */
+
+@each $key,$val in $main-colors {
+	.color-#{$key} {
+		color: #{$val};
+	}
+}
+
+// Font weights
+
+.light {
+	font-weight: $fw-light;
+}
+
+.regular {
+	font-weight: $fw-regular;
+}
+
+.semi-bold {
+	font-weight: $fw-semi-bold;
+}
+
+.bold {
+	font-weight: $fw-bold;
+}
+
+.extra-bold{
+	font-weight: $fw-extra-bold;
+}
+
+// Font styles
+
+.italic {
+	font-style: italic;
+}
+
+.normal {
+	font-style: normal;
+}
+
+// Text overflow
+
+.ellipsis {
+	@include text-overflow();
+}
+
+// Text transforms
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.lowercase {
+	text-transform: lowercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+// Text decorations
+
+.underline {
+	text-decoration: underline;
+}
+
+.no-underline {
+	text-decoration: none;
+}
+
+// Text align
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-left {
+	text-align: left;
+}

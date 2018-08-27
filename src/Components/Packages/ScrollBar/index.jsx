@@ -50,7 +50,7 @@ class ScrollBar extends React.Component {
       <Layout>
         <div className="Layout">
           <Layout>
-            <Layout style={{ padding: "0 24px 24px" }}>
+            <Layout>
               <Content
                 style={{
                   background: "#fff",
@@ -67,12 +67,12 @@ class ScrollBar extends React.Component {
                   <Col span={2} />
 
                   <Col span={11}>
-                    <h2>Demo</h2>
-                    <div style={{ display: "block" }}>
+                    <h1>Demo</h1>
+                    <div>
                       <Demo />
                     </div>
-                    <div style={{ marginTop: "30px" }}>
-                      <Button onClick={this.showSource}>
+                    <div className="pt-25 pb-25">
+                      <Button onClick={this.showSource} className="btn filled secondary min-160">
                         {" "}
                         {this.state.showSource === "none"
                           ? "Show Source"

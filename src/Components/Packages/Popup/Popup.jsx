@@ -26,41 +26,33 @@ class Popup extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.handleOpenModal}>Trigger Modal</button>
+        <button onClick={this.handleOpenModal} className="btn outline secondary min-160">Trigger Modal</button>
+        <div>
         <ReactModal
           isOpen={this.state.showModal}
           contentLabel="Inline Styles Modal Example"
           style={{
             overlay: {
-              position: "fixed",
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              backgroundColor: "rgba(1,1,1,0.8)"
             },
             modal: {},
             content: {
-              textAlign: "center",
-              width: "500px",
-              height: "450px",
-              top: 100,
-              left: 600
             }
           }}
         >
-          <div>
+          <div className="popup">
             <iframe
-              width="460"
+              width="400"
               height="330"
               allowFullScreen
               frameBorder="0"
               src="https://www.youtube.com/embed/A71aqufiNtQ?autoplay=1&cc_load_policy=1&controls=1&disablekb=0&enablejsapi=0&fs=1&iv_load_policy=1&loop=0&rel=0&showinfo=1&start=0&wmode=transparent&theme=dark"
             />
-
-            <button onClick={this.handleCloseModal}>Close Modal</button>
+            <div className="pt-25">
+              <button onClick={this.handleCloseModal} className="btn outline secondary min-160">Close Modal</button>
+            </div>
           </div>
         </ReactModal>
+        </div>
       </div>
     );
   }

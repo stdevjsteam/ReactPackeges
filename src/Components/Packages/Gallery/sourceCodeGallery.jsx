@@ -25,15 +25,7 @@ export default class GalleryExample extends Component {
 
   render() {
     return (
-      <div
-        style={{
-          display: "block",
-          minHeight: "1px",
-          width: "100%",
-          border: "1px solid #ddd",
-          overflow: "auto"
-        }}
-      >
+      <div>
         <Gallery
           images={this.state.images}
           onSelectImage={this.onSelectImage}
