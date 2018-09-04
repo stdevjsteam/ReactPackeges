@@ -18,9 +18,9 @@ class DropZone extends React.Component {
       <section>
         <div className="dropzone">
           <Dropzone onDrop={this.onDrop.bind(this)}>
-            <p>
-              Try dropping some files here, or click to select files to upload.
-            </p>
+            <div className="drag-text">
+              <p className="text">Try dropping some files here, or click to select files to upload.</p>
+            </div>
           </Dropzone>
         </div>
         <aside>

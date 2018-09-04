@@ -60,7 +60,7 @@ class ReactDropZone extends React.Component {
                   <Col span={2} />
                   <Col span={11}>
                     <h1>Demo</h1>
-                    <div style={{ paddingLeft: "35%" }}>
+                    <div className="flex justify-center">
                       <Demo />
                     </div>
 

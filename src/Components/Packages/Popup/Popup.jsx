@@ -32,7 +32,7 @@ class Popup extends Component {
     );
     return (
       <div className="example">
-        <button className="btn btn-action" onClick={this.onOpenModal}>
+        <button className="btn filled secondary min-160" onClick={this.onOpenModal}>
           Open
         </button>{" "}
         <Modal open={open} onClose={this.onCloseModal}>
